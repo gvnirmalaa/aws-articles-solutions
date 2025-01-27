@@ -1,0 +1,17 @@
+Welcome AWS Cloud Aspirants !!
+
+Here in this post, I am opening a multi part series of design solutions to requirements & how it got improvised with time & knowledge
+
+Let us see Part 1
+
+Given scenario is a minimal illustration of one of the use cases. Requirement is to notify the admin/team when there is no tag in an EC2 resource.
+
+To simplify
+
+1.Create an event bridge rule to check for any EC2 instances in the account
+2.Create a lambda function to check a given Tag/Value in EC2 instances
+3.Create an SNS topic and group/team email id to notify when tag/value doesn't exists
+4.Now when event bridge rules(with cron scheduler) assess the EC2 Instance(s), irrespective of the state(RUNNING or STOPPED) and if lambda function doesn't find the Tag Value[Project:Team or Tag:Value, as applicable]
+5.Lambda has to trigger SNS email notification to the group id
+
+Solution Design for this scenario:
