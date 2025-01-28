@@ -1,6 +1,6 @@
 **<ins>AWS Cloud Solutions - Management & Governance</ins>**
 
-Requirement is to efficiently manage & maintain "Creation/Updation" of Resource Definitions in AWS accounts is a minimal illustration of one of the use cases. Requirement is to notify the admin/team when there is no tag in an EC2 resource or any
+`Requirement is to efficiently manage & maintain "Creation/Updation" of Resource Definitions in AWS accounts is a minimal illustration of one of the use cases. Ideally expecting Tag:Value in any resource that is created in an AWS account.`
 
 **<ins>Part #2 solution break down:</ins>**
 
