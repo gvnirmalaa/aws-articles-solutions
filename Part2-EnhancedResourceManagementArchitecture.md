@@ -1,8 +1,8 @@
-###AWS Cloud Solutions - Management & Governance###
+**<ins>AWS Cloud Solutions - Management & Governance</ins>**
 
 Requirement is to efficiently manage & maintain "Creation/Updation" of Resource Definitions in AWS accounts is a minimal illustration of one of the use cases. Requirement is to notify the admin/team when there is no tag in an EC2 resource or any
 
-**Part #2 solution break down:**
+**<ins>Part #2 solution break down:</ins>**
 
 1) User/Roles is the access mechanism to any resources which holds access definitions in the form of permissions
 
@@ -12,9 +12,10 @@ Requirement is to efficiently manage & maintain "Creation/Updation" of Resource 
 
 **<ins>Solution Design for this scenario:</ins>**
 
+![Part2-Architecture-EnhancedResourceManagement](https://github.com/user-attachments/assets/83c0657c-879f-40e0-be62-ed87069efea8)
 
 
-**Benefits around this solution:**
+**<ins>Benefits around this solution:</ins>**
 
 1) Requirement being efficient way of handling tags' existence in resources, attaching a permissions policy with IAM user or role or group is most efficient as resources are created through these source points
 2) In addition, the policy will take care of the Tag's existence both at creation and also at any update that happens(when it is about to remove the existing tag via code/console/CLI)
@@ -25,5 +26,3 @@ Requirement is to efficiently manage & maintain "Creation/Updation" of Resource 
 In conclusion, this is an improvised version of solution design compared to the earlier one !!
 
 Yet again folks, please hold on to your invaluable suggestions to the last part of this series(coming soon) and I am willing to learn & know more possibilities from my fellow aspirants !!
-
-**Part #1:** 
