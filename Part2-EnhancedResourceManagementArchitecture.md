@@ -10,6 +10,27 @@ Requirement is to efficiently manage & maintain "Creation/Updation" of Resource 
 
 3) Just defining IAM permissions and attaching them to appropriate users/roles will enable monitoring & maintaining the resources for the expected tag:values
 
+
+**Simple policy pseudocode to restrict any resource creation without tag values:**
+```
+{
+  "Version": "2012-10-17",
+  "Statement": [
+    {
+      "Sid": "DenyResourceCreationWithoutTags",
+      "Effect": "Deny",
+      "Action": "*", 
+      "Resource": "*",
+      "Condition": {
+        "Null": {
+          "aws:RequestTag/": "true" 
+        }
+      }
+    }
+  ]
+}
+```
+
 **<ins>Solution Design for this scenario:</ins>**
 
 ![Part2-Architecture-EnhancedResourceManagement](https://github.com/user-attachments/assets/83c0657c-879f-40e0-be62-ed87069efea8)
