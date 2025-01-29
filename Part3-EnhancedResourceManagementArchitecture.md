@@ -9,8 +9,8 @@ Welcome to Part 3 of the enhanced solution design(s) - Management & Governance c
 3) Now, attach the Tagging & SCP policy against the OU under the AWS Organizations. This will together enforce Tagging strategies enforcement for resources and SCPs will ensure the compliance of tags on resources
 4) Advantage is that different OUs can have different policies/scp attached as per the environment or account perspective
 
-Solution Design for this scenario:
-
+**<ins>Solution Design for this scenario:</ins>**
+![Part3-Architecture-EnhancedResourceManagement](https://github.com/user-attachments/assets/2f2cba24-cc23-4fbf-aec1-4e07d7675d7b)
 
 **<ins>Benefits around this solution:</ins>**
 
